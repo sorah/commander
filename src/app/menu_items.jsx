@@ -9,7 +9,7 @@ var items = [
     {
       children: [
         new MenuItem('Instances', {component: Views.EC2.Instances}),
-        new MenuItem('ELBs', {component: null}),
+        new MenuItem('ELBs', {component: Views.EC2.Elb}),
       ],
     }
   ),
