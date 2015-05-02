@@ -1,0 +1,23 @@
+{
+  "name": "commander",
+  "version": "0.1.0",
+  "description": "Control your AWS resources. Built with atom/electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sorah/commander"
+  },
+  "author": "sorah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sorah/commander/issues"
+  },
+  "homepage": "https://github.com/sorah/commander",
+  "dependencies": {
+    "aws-sdk": "^2.1.25",
+    "babel": "^5.2.6"
+  }
+}

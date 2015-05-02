@@ -1,0 +1,19 @@
+ul.cm-menu {
+  padding-left: 0px;
+}
+
+.cm-menu-lv-0 > .cm-menuitem > span {
+  font-weight: bold;
+}
+
+.cm-menu ul.cm-menu {
+  padding-left: 12px;
+}
+
+.cm-menu li {
+  list-style-type: none;
+}
+
+.cm-menuitem.cm-menuitem-active {
+  color: #1896DA;
+}
