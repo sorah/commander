@@ -12,11 +12,11 @@ module.exports = class Menu extends React.Component {
   get renderedMenuItems() {
     return this.props.items.map((item) => {
       var className = "cm-menuitem";
-      if (item.path.length == this.props.active.length && item.path.every((x,i) => x == this.props.active[i])) {
+      if (item.path == this.props.active) {
         className += " cm-menuitem-active";
       }
 
-      return <li className={className} key={`menuitem//${item.path.join("/")}`}>
+      return <li className={className} key={`menuitem//${item.path}`}>
         <span>{item.name}</span>
         {item.isGroup() ? <Menu {...this.props} level={this.props.level + 1} items={item.children} /> : ''}
       </li>

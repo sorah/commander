@@ -4,7 +4,7 @@ var Sidemenu = require('./components/sidemenu');
 var AccountSwitcher = require('./components/account_switcher');
 var MenuItems = require('./menu_items');
 
-const DEFAULT_PAGE = ['EC2', 'Instances'];
+const DEFAULT_PAGE = ['EC2', 'Instances'].join('/');
 module.exports = class App extends React.Component {
   constructor(props) {
     super(props);

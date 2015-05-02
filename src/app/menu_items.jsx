@@ -17,9 +17,10 @@ var items = [
 
 var assignPath = function(is, path) {
   is.forEach((item) => {
-    item.path = [...path, item.name];
+    var newRawPath = [...path, item.name];
+    item.path = newRawPath.join('/');
     if ( item.isGroup() )
-      assignPath(item.children, item.path);
+      assignPath(item.children, newRawPath);
   });
 }
 assignPath(items, []);
