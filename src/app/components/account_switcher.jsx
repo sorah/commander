@@ -2,6 +2,10 @@
 
 module.exports = class AccountSwitcher extends React.Component {
   render() {
-    return <div />;
+    return (
+      <div className="cm-accountswitcher">
+        Account:
+      </div>
+    );
   }
 };
