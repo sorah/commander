@@ -16,8 +16,10 @@ module.exports = class Menu extends React.Component {
         className += " cm-menuitem-active";
       }
 
+      var clickHandler = item.component ? this.props.onItemClick : null;
+
       return <li className={className} key={`menuitem//${item.path}`}>
-        <span>{item.name}</span>
+        <div className="cm-menuitem-text" onClick={clickHandler} data-item-path={item.path}>{item.name}</div>
         {item.isGroup() ? <Menu {...this.props} level={this.props.level + 1} items={item.children} /> : ''}
       </li>
     });

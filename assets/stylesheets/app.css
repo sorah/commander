@@ -2,7 +2,7 @@ ul.cm-menu {
   padding-left: 0px;
 }
 
-.cm-menu-lv-0 > .cm-menuitem > span {
+.cm-menu-lv-0 > .cm-menuitem > .cm-menuitem-text {
   font-weight: bold;
 }
 
