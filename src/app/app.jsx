@@ -18,7 +18,7 @@ module.exports = class App extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div classname="col-sm-5">
+          <div className="col-sm-5">
             <AccountSwitcher active={this.state.activeAccount} />
           </div>
         </div>
